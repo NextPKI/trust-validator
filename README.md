@@ -1,6 +1,6 @@
-# UltraPKI Trust Validator
+# NextPKI Trust Validator
 
-UltraPKI Trust Validator is a Go-based tool for validating X.509 certificate chains against a trusted root store. It automatically downloads the latest CA trust store, updates a Postgres database, and checks the trust status of certificates stored in the database. It can run as a one-shot tool or as a daemon with periodic validation and a health check endpoint.
+NextPKI Trust Validator is a Go-based tool for validating X.509 certificate chains against a trusted root store. It automatically downloads the latest CA trust store, updates a Postgres database, and checks the trust status of certificates stored in the database. It can run as a one-shot tool or as a daemon with periodic validation and a health check endpoint.
 
 ## Features
 - Downloads and parses the latest CA trust store (from curl.se)
@@ -16,7 +16,7 @@ UltraPKI Trust Validator is a Go-based tool for validating X.509 certificate cha
 ## Quick Start
 1. Clone the repository and enter the directory:
    ```sh
-   git clone https://github.com/UltraPKI/trust-validator.git
+   git clone https://github.com/NextPKI/trust-validator.git
    cd validator
    ```
 2. Copy the example environment file and edit as needed:
@@ -57,4 +57,5 @@ When running in daemon mode, the validator exposes an HTTP health check endpoint
 - `make clean`: Remove the built binary
 
 ## License
-MIT
+
+This project is licensed under the GNU General Public License v3.0. See the LICENSE file for details.
